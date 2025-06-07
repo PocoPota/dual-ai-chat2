@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dual-AI-Chat</title>
+</head>
+<body>
+  <main>
+    <h1>Dual-AI-Chat</h1>
+    <div class="apiKey">
+      <label>Gemini APIキー: </label>
+      <input type="password" placeholder="Gemini APIキー"/>
+    </div>
+    <div class="systemPrompt">
+      <div>
+        <label>AI1のシステムプロンプト(個別情報): </label>
+        <textarea placeholder="AI1のシステムプロンプト"></textarea>
+      </div>
+      <div>
+        <label>AI2のシステムプロンプト(個別情報): </label>
+        <textarea placeholder="AI2のシステムプロンプト"></textarea>
+      </div>
+      <div>
+        <label>全体のシステムプロンプト(状況情報): </label>
+        <textarea placeholder="全体のシステムプロンプト"></textarea>
+      </div>
+    </div>
+    <div class="control">
+      <button onclick="chatStart()">Start</button>
+      <button onclick="chatStop()">Stop</button>
+      <button onclick="memoryReset()">Memory Reset</button>
+    </div>
+    <section id="chatSpace"></section>
+  </main>
+  <script src="./script/script.js"></script>
+</body>
+</html>
