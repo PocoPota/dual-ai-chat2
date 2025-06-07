@@ -10,20 +10,20 @@
     <h1>Dual-AI-Chat</h1>
     <div class="apiKey">
       <label>Gemini APIキー: </label>
-      <input type="password" placeholder="Gemini APIキー"/>
+      <input type="password" id="apiKey" placeholder="Gemini APIキー"/>
     </div>
     <div class="systemPrompt">
       <div>
         <label>AI1のシステムプロンプト(個別情報): </label>
-        <textarea placeholder="AI1のシステムプロンプト"></textarea>
+        <textarea id="sysP1" placeholder="AI1のシステムプロンプト"></textarea>
       </div>
       <div>
         <label>AI2のシステムプロンプト(個別情報): </label>
-        <textarea placeholder="AI2のシステムプロンプト"></textarea>
+        <textarea id="sysP2" placeholder="AI2のシステムプロンプト"></textarea>
       </div>
       <div>
         <label>全体のシステムプロンプト(状況情報): </label>
-        <textarea placeholder="全体のシステムプロンプト"></textarea>
+        <textarea id="sysPAll" placeholder="全体のシステムプロンプト"></textarea>
       </div>
     </div>
     <div class="control">
